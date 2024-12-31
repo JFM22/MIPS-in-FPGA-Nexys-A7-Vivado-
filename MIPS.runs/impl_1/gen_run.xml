@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1734708089">
+  <File Type="ROUTE-PWR" Name="Impl_MIPS_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Impl_MIPS.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="Impl_MIPS_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Impl_MIPS_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="Impl_MIPS.msk"/>
+  <File Type="ROUTE-CLK" Name="Impl_MIPS_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="Impl_MIPS.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Impl_MIPS_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Impl_MIPS.bit"/>
+  <File Type="BG-DRC" Name="Impl_MIPS.drc"/>
+  <File Type="BG-BGN" Name="Impl_MIPS.bgn"/>
+  <File Type="BG-BIN" Name="Impl_MIPS.bin"/>
+  <File Type="BITSTR-RBT" Name="Impl_MIPS.rbt"/>
+  <File Type="BITSTR-NKY" Name="Impl_MIPS.nky"/>
+  <File Type="BITSTR-BMM" Name="Impl_MIPS_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Impl_MIPS.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Impl_MIPS_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="Impl_MIPS.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Impl_MIPS_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Impl_MIPS.ltx"/>
+  <File Type="BOOT-PDI-FILE" Name="Impl_MIPS_boot.pdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="NPI_FILE" Name="Impl_MIPS.npi"/>
+  <File Type="OPT-DRC" Name="Impl_MIPS_drc_opted.rpt"/>
+  <File Type="RBD_FILE" Name="Impl_MIPS.rbd"/>
+  <File Type="OPT-HWDEF" Name="Impl_MIPS.hwdef"/>
+  <File Type="PLACE-IO" Name="Impl_MIPS_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Impl_MIPS_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Impl_MIPS_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Impl_MIPS_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Impl_MIPS_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="Impl_MIPS_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Impl_MIPS_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Impl_MIPS_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Impl_MIPS_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Impl_MIPS_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="Impl_MIPS_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Impl_MIPS_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Impl_MIPS_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Impl_MIPS_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Impl_MIPS_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Impl_MIPS_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Impl_MIPS_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Impl_MIPS_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Impl_MIPS_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Impl_MIPS_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="Impl_MIPS_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="Impl_MIPS_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="Impl_MIPS_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Impl_MIPS_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Impl_MIPS_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Impl_MIPS_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Impl_MIPS_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Impl_MIPS_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Impl_MIPS_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Impl_MIPS_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Impl_MIPS_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Impl_MIPS_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="Impl_MIPS_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Impl_MIPS_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="Impl_MIPS.pdi"/>
+  <File Type="PL-PDI-FILE" Name="Impl_MIPS_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="Impl_MIPS.rcfi"/>
+  <File Type="CFI_FILE" Name="Impl_MIPS.cfi"/>
+  <File Type="RNPI_FILE" Name="Impl_MIPS.rnpi"/>
+  <File Type="ROUTE-RQS" Name="Impl_MIPS_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="Impl_MIPS_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ALU.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ControlUnit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GenericRegister.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Procesador.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RegisterFile.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/freq_div.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Impl_MIPS.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/display_controller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/prac4/Bubblesort32.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Desktop/Universidad Season 7/DFP/prac4/Bubblesort32.coe"/>
+        <Attr Name="ImportTime" Val="1732963270"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Impl_MIPS"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/Impl_MIPS.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+</GenRun>
