@@ -1,0 +1,381 @@
+
+*** Running vivado
+    with args -log Impl_MIPS.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Impl_MIPS.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sat Jan 11 14:08:01 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Impl_MIPS.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 491.016 ; gain = 201.953
+Command: read_checkpoint -auto_incremental -incremental C:/Users/javic/Downloads/MIPS/MIPS.srcs/utils_1/imports/synth_1/Impl_MIPS.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/javic/Downloads/MIPS/MIPS.srcs/utils_1/imports/synth_1/Impl_MIPS.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Impl_MIPS -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10640
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1369.566 ; gain = 449.336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Impl_MIPS' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Impl_MIPS.vhd:44]
+INFO: [Synth 8-3491] module 'Procesador' declared at 'C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Procesador.vhd:34' bound to instance 'cpu' of component 'Procesador' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Impl_MIPS.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'Procesador' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Procesador.vhd:45]
+INFO: [Synth 8-3491] module 'ControlUnit' declared at 'C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/ControlUnit.vhd:34' bound to instance 'c_ControlUnit' of component 'ControlUnit' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Procesador.vhd:195]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/ControlUnit.vhd:55]
+WARNING: [Synth 8-614] signal 'en_i' is read in the process but is not in the sensitivity list [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/ControlUnit.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (0#1) [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/ControlUnit.vhd:55]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/ALU.vhd:34' bound to instance 'c_alu' of component 'ALU' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Procesador.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/ALU.vhd:48]
+	Parameter N bound to: 32 - type: integer 
+WARNING: [Synth 8-7143] Equality comparison of non constant with static metalogical value is evaluated as 'false'. This may cause simulation-synthesis differences [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/ALU.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (0#1) [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/ALU.vhd:48]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'GenericRegister' declared at 'C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/GenericRegister.vhd:35' bound to instance 'PC_c' of component 'GenericRegister' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Procesador.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'GenericRegister' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/GenericRegister.vhd:48]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'GenericRegister' (0#1) [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/GenericRegister.vhd:48]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'GenericRegister' declared at 'C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/GenericRegister.vhd:35' bound to instance 'ALU_out_c' of component 'GenericRegister' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Procesador.vhd:242]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'GenericRegister' declared at 'C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/GenericRegister.vhd:35' bound to instance 'rf_A' of component 'GenericRegister' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Procesador.vhd:254]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'GenericRegister' declared at 'C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/GenericRegister.vhd:35' bound to instance 'rf_B' of component 'GenericRegister' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Procesador.vhd:265]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'GenericRegister' declared at 'C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/GenericRegister.vhd:35' bound to instance 'instruction_register' of component 'GenericRegister' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Procesador.vhd:277]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'GenericRegister' declared at 'C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/GenericRegister.vhd:35' bound to instance 'memory_data_register' of component 'GenericRegister' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Procesador.vhd:289]
+	Parameter N bound to: 5 - type: integer 
+	Parameter M bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'RegisterFile' declared at 'C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/RegisterFile.vhd:34' bound to instance 'rf' of component 'RegisterFile' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Procesador.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/RegisterFile.vhd:53]
+	Parameter N bound to: 5 - type: integer 
+	Parameter M bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (0#1) [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/RegisterFile.vhd:53]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'C:/Users/javic/Downloads/MIPS/MIPS.runs/synth_1/.Xil/Vivado-13300-Javi/realtime/blk_mem_gen_0_stub.vhdl:6' bound to instance 'mem_inst' of component 'blk_mem_gen_0' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Procesador.vhd:319]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/javic/Downloads/MIPS/MIPS.runs/synth_1/.Xil/Vivado-13300-Javi/realtime/blk_mem_gen_0_stub.vhdl:24]
+INFO: [Synth 8-256] done synthesizing module 'Procesador' (0#1) [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Procesador.vhd:45]
+INFO: [Synth 8-3491] module 'display_controller' declared at 'C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/display_controller.vhd:34' bound to instance 'displ_contr' of component 'display_controller' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Impl_MIPS.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'display_controller' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/display_controller.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'display_controller' (0#1) [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/display_controller.vhd:46]
+	Parameter DIVISOR bound to: 500000 - type: integer 
+INFO: [Synth 8-3491] module 'freq_div' declared at 'C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/freq_div.vhd:33' bound to instance 'freq_div_inst1' of component 'freq_div' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Impl_MIPS.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'freq_div' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/freq_div.vhd:43]
+	Parameter DIVISOR bound to: 500000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'freq_div' (0#1) [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/freq_div.vhd:43]
+	Parameter DIVISOR bound to: 12500 - type: integer 
+INFO: [Synth 8-3491] module 'freq_div' declared at 'C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/freq_div.vhd:33' bound to instance 'freq_div_inst2' of component 'freq_div' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Impl_MIPS.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'freq_div__parameterized1' [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/freq_div.vhd:43]
+	Parameter DIVISOR bound to: 12500 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'freq_div__parameterized1' (0#1) [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/freq_div.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Impl_MIPS' (0#1) [C:/Users/javic/Downloads/MIPS/MIPS.srcs/sources_1/new/Impl_MIPS.vhd:44]
+WARNING: [Synth 8-7129] Port data_in[31] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[30] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[29] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[28] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[27] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[26] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[25] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[24] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[23] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[22] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[21] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[20] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[19] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[18] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[17] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[16] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[15] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[14] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[13] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[12] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[11] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[10] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[9] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[8] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[7] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[6] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[5] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[4] in module display_controller is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1487.371 ; gain = 567.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1487.371 ; gain = 567.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1487.371 ; gain = 567.141
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1487.371 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/javic/Downloads/MIPS/MIPS.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'cpu/mem_inst'
+Finished Parsing XDC File [c:/Users/javic/Downloads/MIPS/MIPS.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'cpu/mem_inst'
+Parsing XDC File [C:/Users/javic/Downloads/MIPS/MIPS.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/javic/Downloads/MIPS/MIPS.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/javic/Downloads/MIPS/MIPS.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Impl_MIPS_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Impl_MIPS_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1578.504 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1578.504 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'cpu/mem_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1578.793 ; gain = 658.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1578.793 ; gain = 658.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for cpu/mem_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1578.793 ; gain = 658.562
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ControlUnit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                    0000000000001 |                             0000
+                      s1 |                    0000000000010 |                             0001
+                      s2 |                    0000000000100 |                             0010
+                     s10 |                    0000000001000 |                             1010
+                  iSTATE |                    0000000010000 |                             1011
+                 iSTATE2 |                    0000000100000 |                             1001
+                 iSTATE0 |                    0000001000000 |                             1100
+                      s3 |                    0000010000000 |                             0011
+                      s4 |                    0000100000000 |                             0100
+                      s5 |                    0001000000000 |                             0101
+                 iSTATE3 |                    0010000000000 |                             0110
+                 iSTATE1 |                    0100000000000 |                             0111
+                 iSTATE4 |                    1000000000000 |                             1000
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'ControlUnit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1578.793 ; gain = 658.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 40    
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 2     
+	   8 Input   13 Bit        Muxes := 1     
+	   4 Input   13 Bit        Muxes := 1     
+	   3 Input   13 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	  14 Input    2 Bit        Muxes := 1     
+	  14 Input    1 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port data_in[31] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[30] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[29] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[28] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[27] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[26] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[25] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[24] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[23] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[22] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[21] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[20] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[19] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[18] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[17] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[16] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[15] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[14] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[13] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[12] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[11] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[10] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[9] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[8] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[7] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[6] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[5] in module display_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_in[4] in module display_controller is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1578.793 ; gain = 658.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1578.793 ; gain = 658.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1596.938 ; gain = 676.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1596.988 ; gain = 676.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1605.848 ; gain = 685.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1605.848 ; gain = 685.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1605.848 ; gain = 685.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1605.848 ; gain = 685.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1605.848 ; gain = 685.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1605.848 ; gain = 685.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |blk_mem_gen_0_bbox |     1|
+|2     |BUFG               |     1|
+|3     |CARRY4             |    36|
+|4     |LUT1               |     3|
+|5     |LUT2               |     8|
+|6     |LUT3               |    45|
+|7     |LUT4               |    39|
+|8     |LUT5               |   273|
+|9     |LUT6               |   729|
+|10    |MUXF7              |   256|
+|11    |FDCE               |  1275|
+|12    |FDPE               |    15|
+|13    |IBUF               |     3|
+|14    |OBUF               |    16|
++------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1605.848 ; gain = 685.617
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:33 . Memory (MB): peak = 1605.848 ; gain = 594.195
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1605.848 ; gain = 685.617
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1605.848 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 292 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1605.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7d1cd0ba
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 1605.848 ; gain = 1101.848
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1605.848 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/javic/Downloads/MIPS/MIPS.runs/synth_1/Impl_MIPS.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Impl_MIPS_utilization_synth.rpt -pb Impl_MIPS_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 11 14:08:51 2025...
