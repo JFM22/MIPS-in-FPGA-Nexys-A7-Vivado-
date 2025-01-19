@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+Note: ---> INICIANDO PRUEBAS <---
+Time: 10 ns  Iteration: 0  Process: /ControlUnit_tb/main  File: C:/Users/javic/Downloads/MIPS/MIPS.srcs/sim_1/new/ControlUnit_tb.vhd
+Note: ---> FIN <---
+Time: 210 ns  Iteration: 0  Process: /ControlUnit_tb/main  File: C:/Users/javic/Downloads/MIPS/MIPS.srcs/sim_1/new/ControlUnit_tb.vhd
